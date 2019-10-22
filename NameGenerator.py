@@ -3,8 +3,10 @@ from random import *
 class NameGenerator:
 	rFlag = 'G'
 	
-	generic_firstnames = [] # TODO: some default names, more can come later
-	generic_lastnames = [] # TODO: same as above...
+	generic_firstnames = ['Greg','Samuel','Mark','Tom','Timothy',
+						  'Harold','John','Todd','Ken','Craig',] # TODO: some default names, more can come later
+	generic_lastnames = ['Johnson','Wordsworth','Frank','Doe','Smith'
+						,'Appleton','Smallpox','Wilson','Long','Short',] # TODO: same as above...
 
 	# specific dicts (maybe can just use lists, since accessing times aren't an issue...
 	# for races
@@ -57,8 +59,14 @@ class NameGenerator:
 	def getName(self):
 		# TODO: code here, depending on the correct race type
 		if self.rFlag == 'G':
-			return generic_firstname[randint(0, len(generic_firstname - 1)], generic_lastname[randint(0, len(generic_lastname - 1)]
-			#hopefully this works, we'll see lol
+			first = self.generic_firstnames[randint(0, len(self.generic_firstnames) - 1)]
+			last = self.generic_lastnames[randint(0, len(self.generic_lastnames) - 1)]
+			return first, last
+		''' 
+			the rFlag works, the first/last tuple for names works. 
+			TODO: implement the other name lists
+		'''
+		if self.
 
 
 	def setFlag(self, rFlag):
@@ -75,3 +83,4 @@ i = 0
 
 while i < 10:
 	print(ng.getName())
+	i += 1
