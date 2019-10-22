@@ -29,12 +29,12 @@ class DiceRoller:
 #end DiceRoller
 
 
+'''
 #NOTE: This can be commented out / removed later after confirmation of success. 
 #some small tests:
 dr = DiceRoller()
 
 #testing each die individually, doing 10 rolls of each
-
 print('\nTesting 4-sided die')
 i = 0
 while i < 10:
@@ -64,3 +64,4 @@ i = 0
 while i < 10:
   print(dr.d20())
   i += 1
+ '''
