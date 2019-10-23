@@ -4,9 +4,10 @@ class NameGenerator:
 	rFlag = 'G'
 	
 	generic_firstnames = ['Greg','Samuel','Mark','Tom','Timothy',
-						  'Harold','John','Todd','Ken','Craig',] # TODO: some default names, more can come later
+	'Harold','John','Todd','Ken','Craig',]
+	
 	generic_lastnames = ['Johnson','Wordsworth','Frank','Doe','Smith'
-						,'Appleton','Smallpox','Wilson','Long','Short',] # TODO: same as above...
+	,'Appleton','Smallpox','Wilson','Long','Short',]
 
 	# specific dicts (maybe can just use lists, since accessing times aren't an issue...
 	# for races
@@ -17,8 +18,9 @@ class NameGenerator:
 
 	#----------------------------------------------------------------#
 
-	elf_firstnames = []
-	elf_lastnames = []
+	elf_firstnames = ['Aust', 'Adra', 'Berrian', 'Birel', 'Carric', 'Caelynn', 'Erevan', 'Felosial', 'Ivellion', 'Quarion', 'Lia',
+	'Varis', 'Xanathi']
+	elf_lastnames = ['Amakiir', 'Amastacia', 'Galanodel', 'Holion', 'Liadon', 'Meliamne', 'Siannodel', 'Xiloscient']
 
 	#----------------------------------------------------------------#
 
@@ -27,8 +29,9 @@ class NameGenerator:
 	
 	#----------------------------------------------------------------#
 
-	dwarf_firstnames = []
-	dwarf_lastnames = []
+	dwarf_firstnames = ['Adrik', 'Alberich', 'Baern', 'Barendd', 'Buren', 'Dain', 'Delg', 'Einkil', 'Eistin',
+	'Rangran', 'Thorik', 'Urrek', 'Vein',]
+	dwarf_lastnames = ['Battlehammer', 'Stoutbrew', 'Amberbeard', 'Stormbraid', 'Gemforge', 'Rockroller', 'Thunderkiln', 'Flameaxe',]
 
 	#----------------------------------------------------------------#
 
@@ -48,10 +51,12 @@ class NameGenerator:
 	#----------------------------------------------------------------#
 
 	def __init__(self, rFlag):
-		# TODO: more initializing
-		# with the below section, keep in mind will work only if another part
-		# of the code somewhere else randomly decides which flag from a list
-		# will be chosen. Worth fiddling around with later.
+		'''
+		TODO: more initializing
+		with the below section, keep in mind will work only if another part
+		of the code somewhere else randomly decides which flag from a list
+		will be chosen. Worth fiddling around with later.
+		'''
 		self.rFlag = rFlag
 		return
 
@@ -66,8 +71,21 @@ class NameGenerator:
 			the rFlag works, the first/last tuple for names works. 
 			TODO: implement the other name lists
 		'''
-		if self.
-
+		if self.rFlag == 'Hu':
+			# TODO
+		if self.rFlag == 'EL':
+			# TODO
+		if self.rFlag == 'HL':
+			# TODO
+		if self.rFlag == 'DW':
+			# TODO
+		if self.rFlag == 'HO':
+			# TODO
+		if self.rFlag == 'HE':
+			# TODO
+		if self.rFlag == 'TL':
+			# TODO
+	
 
 	def setFlag(self, rFlag):
 		# purely to update the flag, mostly for testing, but we'll see?
