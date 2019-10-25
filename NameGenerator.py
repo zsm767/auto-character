@@ -69,22 +69,42 @@ class NameGenerator:
 			return first, last
 		''' 
 			the rFlag works, the first/last tuple for names works. 
-			TODO: implement the other name lists
+			TODO: look for a more graceful way of handling this outside of a bunch of if's 
 		'''
 		if self.rFlag == 'Hu':
-			# TODO
+			first = self.generic_firstnames[randint(0, len(self.human_firstnames) - 1)]
+			last = self.generic_lastnames[randint(0, len(self.human_lastnames) - 1)]
+			return first, last
+			
 		if self.rFlag == 'EL':
-			# TODO
+			first = self.generic_firstnames[randint(0, len(self.elf_firstnames) - 1)]
+			last = self.generic_lastnames[randint(0, len(self.elf_lastnames) - 1)]
+			return first, last
+			
 		if self.rFlag == 'HL':
-			# TODO
+			first = self.generic_firstnames[randint(0, len(self.halfling_firstnames) - 1)]
+			last = self.generic_lastnames[randint(0, len(self.halfling_lastnames) - 1)]
+			return first, last
+			
 		if self.rFlag == 'DW':
-			# TODO
+			first = self.generic_firstnames[randint(0, len(self.dwarf_firstnames) - 1)]
+			last = self.generic_lastnames[randint(0, len(self.dwarf_lastnames) - 1)]
+			return first, last
+			
 		if self.rFlag == 'HO':
-			# TODO
+			first = self.generic_firstnames[randint(0, len(self.halforc_firstnames) - 1)]
+			last = self.generic_lastnames[randint(0, len(self.halforc_lastnames) - 1)]
+			return first, last
+			
 		if self.rFlag == 'HE':
-			# TODO
+			first = self.generic_firstnames[randint(0, len(self.halfelf_firstnames) - 1)]
+			last = self.generic_lastnames[randint(0, len(self.halfelf_lastnames) - 1)]
+			return first, last
+			
 		if self.rFlag == 'TL':
-			# TODO
+			first = self.generic_firstnames[randint(0, len(self.tiefling_firstnames) - 1)]
+			last = self.generic_lastnames[randint(0, len(self.tiefling_lastnames) - 1)]
+			return first, last
 	
 
 	def setFlag(self, rFlag):
