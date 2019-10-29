@@ -108,7 +108,7 @@ class NameGenerator:
 	
 
 	def setFlag(self, rFlag):
-		# purely to update the flag, mostly for testing, but we'll see?
+		# note: rFlag global var is set to 'G' by default (if non-param init is called)
 		self.rFlag = rFlag
 
 
